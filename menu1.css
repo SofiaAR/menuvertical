@@ -1,0 +1,56 @@
+/*todo el texto con la misma letra*/
+
+body{
+  font-family: sans-serif;
+}
+
+ul{
+  /*outline: 1px solid yellow; /*linea que no modifica el maquetado y cubre
+  el espacio de lo q se indica*/
+  list-style: none; /*para quitar las viñetas*/
+  margin:0;
+  padding:0;
+  width: 200px;
+  line-height: 30px; /*espacio entre lineas*/
+
+}
+
+li{ /*aquí irá el color de fondo de toda la lista*/
+  /*outline: 1px solid red;*/
+  background: #f5f5f0;
+
+}
+
+a{
+  /*outline: 1px solid green;*/
+  display: block; /*para que se convierta en bloque y pueda modificarse*/
+  text-decoration: none; /*para quitar el color y el subrayado del link*/
+  color:#000;
+  padding-left: 10px;/*para dar un espacio antes del incio de la palabra*/
+}
+a:hover{/*pseudo clase: cuando el puntero pasa sobre hover cambia de color*/
+  background: #e0e0d1;/*gris*/
+}
+
+a:active{/*pseudoclase: corresponde al momento en el que el usuario presiona
+el botón del ratón hasta el momento en el que lo suelta*/
+  background: #333;
+  color:#fff;
+}
+
+ul li:first-child{ /*el primer hijo de li que esta dentro de ul,tendra fondo amarillo*/
+  background: #f9a91a; /*fondo amarillo laboratoria*/
+}
+
+ul li:first-child a{ /*busca anchore dentro de el primer li dentro de ul*/
+  color:#fff; /*blanco*/
+}
+
+ul li:first-child a:hover{ /*aplica a anchore q es el primer hijo de li q esta en ul el color
+  de fondo negro*/
+  background: #000;/*negro*/
+}
+ul li:first-child a:active{/*aplica a anchore q es el primer hijo de li q esta en ul
+  el color blanco cuanso sea presionado*/s
+  background: #fff;/*blanco*/
+}
